@@ -1,0 +1,47 @@
+{
+	"name": "sample-webapp",
+	"private": true,
+	"description": "A project sample for a web application",
+	"version": "0.1.0",
+	"license": "MIT",
+	"author": "constgen",
+	"main": "src/index.html",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/constgen/sample-webapp.git"
+	},
+	"keywords": [
+		"sample",
+		"webapp",
+		"project template"
+	],
+	"dependencies": {
+		
+	},
+	"devDependencies": {
+		"grunt": "1.0.1",
+		"grunt-jsdoc": "1.0.0",
+		"grunt-targethtml": "0.2.6",
+		"grunt-contrib-jshint": "1.0.0",
+		"grunt-contrib-watch": "1.0.0",
+		"grunt-contrib-jasmine": "1.0.3",
+		"grunt-contrib-clean": "^0.6.0",
+		"jasmine-core": "2.2.0",
+		"systemjs-builder": "0.15.15",
+		"systemjs-plugin-json": "0.1.0",
+		"systemjs-plugin-css": "0.1.20",
+		"systemjs-plugin-text": "0.0.8",
+		"bower-traceur": "git://github.com/jmcriffey/bower-traceur"
+	},
+	"scripts": {
+		"start": "node tasks/server.js",
+		"test": "grunt test",
+		"build": "grunt build",
+		"live": "grunt live",
+		"code": "grunt code"
+	},
+	"engines" : { 
+		"node" : ">=0.10.0",
+		"npm" : "*" 
+	}
+}
